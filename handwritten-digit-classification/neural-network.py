@@ -30,7 +30,7 @@ class NeuralNetwork:
 
     # Functions for Datalogging and Debugging
 
-    # The following 4 functions are utilized in dataloggin and debugging. 
+    # The following 4 functions are utilized in datalogging and debugging. 
     # They can be used to print out the structure of the neural network, 
     # and display each of the weight matrices, the bias column vectors, 
     # and the activation column vectors.
