@@ -38,6 +38,7 @@ def cost_function(data, w, b):
 
 def gradient_descent(data, w, b, alpha, numIterations):
     num_terms = data[..., 0].size
+    tracking_cost = np.array([])
 
     for i in range(0, numIterations):
         
@@ -59,7 +60,9 @@ def gradient_descent(data, w, b, alpha, numIterations):
         w = temp_w
         b = temp_b
 
-    return (w, b)
+        tracking_cost = np.append(tracking_cost, cost_function(data, w, b))
+
+    return (w, b, tracking_cost)
 
 
 
